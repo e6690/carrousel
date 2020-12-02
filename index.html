@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>SakoShop</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css ">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="peg1.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg2.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg3.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg4.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg5.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg12.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg13.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg15.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg17.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg19.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg26.jpg" style="width: 250px; height: 250px;"></div>
+          <div class="swiper-slide"><img src="peg29.jpg" style="width: 250px; height: 250px;"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          loop: true,
+          autoplay: {
+        delay: 500,
+        disableOnInteraction: false,
+      },
+        });
+      </script> 
+</body>
+</html>
